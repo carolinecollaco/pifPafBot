@@ -104,7 +104,7 @@ def responda(bot, update):
 
     reply_keyboard = [['Sim', 'Nao']]
     chat_id, resposta = persistence.pegar_a_resposta(conn, id_pergunta)
-#PROBLEMA: Mais de uma resposta não avaliada nao funciona
+#PROBLEMA: Mais de uma resposta nao avaliada nao funciona
 #Tem que fazer o usuario avalias se gostou ou nao uma resposta por vez
 #uma solucao eh jogar essa logica em outro metodo e fazer ser recursivo ate
 #nao ter mais respostas pra avaliar, pra isso o select das respostas a serem avaliadas
